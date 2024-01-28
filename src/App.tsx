@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Card from './component/Card'
 import "./App.css";
 
 function App() {
@@ -6,16 +7,17 @@ function App() {
 
   return (
     <>
-      <div className="container sm border-black">
-
+      <div className="container my-12">
+        <Card />
+      </div>
 
         <button
-          className="btn btn-primary"
+          className="btn btn-secondary rounded-3xl"
           onClick={() => setCount((count) => count + 1)}
         >
           count is {count}
         </button>
-      </div>
+
     </>
   );
 }
